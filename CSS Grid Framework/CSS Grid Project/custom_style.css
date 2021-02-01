@@ -1,0 +1,245 @@
+html {
+  font-family: "Arimo", sans-serif;
+}
+
+/* hero section */
+.hero {
+  background: url("./media/desktop_food.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+
+.topnav {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.topnav-logo {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.signin {
+  text-align: center;
+  color: white;
+}
+
+.signup {
+  text-align: center;
+  background-color: white;
+  border-radius: 1000px;
+  border: medium none;
+}
+
+.signup:hover {
+  cursor: pointer;
+}
+.signin:hover {
+  cursor: pointer;
+}
+
+.cta {
+  margin-top: 60px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 46px;
+  text-align: center;
+  color: white;
+}
+/* .form-box{
+    display: flex;
+} */
+
+.address-form {
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  background-color: white;
+  background-image: url("./media/map-marker.png");
+  background-size: contain;
+  background-position: 10px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-right: 35px;
+  max-height: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgb(25, 25, 25);
+  width: 300px;
+  border-radius: 0.8em;
+}
+
+.arrow-btn {
+  text-align: center;
+  margin-left: -35px;
+  height: 30px;
+  width: 30px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+}
+
+/* local favorites */
+
+.favorites {
+  margin-left: 30px;
+}
+
+.favorites-grid {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.grid-title {
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+.grid-subtitle {
+  font-size: 14px;
+}
+
+.grid-img:hover {
+  cursor: pointer;
+}
+
+/* door dasher actions grid */
+
+.dash-actions {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+
+.action-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.action-subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.action-link {
+  font-size: 20px;
+  color: rgb(235, 23, 0);
+  text-align: center;
+  margin-top: 10px;
+}
+.action-link:hover {
+  cursor: pointer;
+}
+
+/* Start of double banner section */
+
+.banners {
+  margin-top: 50px;
+}
+
+.banner-text {
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.banner-subtitle {
+  margin-top: 10px;
+}
+
+.banner-button {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.find-restaurants {
+  font-size: 14px;
+  color: white;
+  position: relative;
+  max-width: 100%;
+  margin: 0px;
+  padding: 8px 16px;
+  display: inline-flex;
+  min-height: 40px;
+  width: auto;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  border-radius: 1000px;
+  border: medium none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out 0s,
+    box-shadow 0.15s ease-in-out 0s;
+  user-select: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(235, 23, 0);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+}
+
+.find-restaurants {
+  cursor: pointer;
+}
+
+.banner_2 {
+  background: rgb(255, 240, 237);
+  margin-top: 40px;
+}
+
+/* start of footer section */
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+
+.cities-nearby li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+.cities-nearby li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.cuisines-nearby li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+.cuisines-nearby li:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.final ul {
+  display: flex;
+}
+
+.final li {
+  font-size: 12px;
+  color: grey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.final li:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
