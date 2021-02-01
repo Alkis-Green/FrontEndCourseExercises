@@ -1,0 +1,121 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* font-family: "Times New Roman", Times, serif; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.hover {
+  text-decoration: underline;
+}
+
+/* Grid columns and rows */
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.row {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-bottom: 10px;
+}
+
+.col,
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5,
+.col_6,
+.col_7,
+.col_8,
+.col_9,
+.col_10,
+.col_11,
+.col_12 {
+  min-width: 0;
+  width: 100%;
+}
+
+.col {
+  grid-column: 1/13;
+}
+.col_1 {
+  grid-column: span 1;
+}
+
+.col_2 {
+  grid-column: span 2;
+}
+.col_2 {
+  grid-column: span 2;
+}
+.col_3 {
+  grid-column: span 3;
+}
+.col_4 {
+  grid-column: span 4;
+}
+.col_5 {
+  grid-column: span 5;
+}
+.col_6 {
+  grid-column: span 6;
+}
+.col_7 {
+  grid-column: span 7;
+}
+.col_8 {
+  grid-column: span 8;
+}
+.col_9 {
+  grid-column: span 9;
+}
+.col_10 {
+  grid-column: span 10;
+}
+.col_11 {
+  grid-column: span 11;
+}
+.col_12 {
+  grid-column: span 12;
+}

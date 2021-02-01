@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             height: 100vh;
             margin: 0;
         }
+
         .container {
             background: white;
             border: 1px solid gray;
@@ -19,6 +21,7 @@
             height: 480px;
             font-size: 0;
         }
+
         img {
             box-sizing: border-box;
             border: 1px solid #666;
@@ -26,10 +29,57 @@
             width: 160px;
             height: 120px;
         }
+
         /* SOLUTION: CODE STARTS HERE >> */
+        #a2 {
+            transform: translate(0px, -120px);
+        }
+
+        #a4 {
+            transform: translate(160px, -360px);
+        }
+
+        #b2 {
+            transform: translate(0, 120px) rotate(180deg);
+        }
+
+        #b3 {
+            transform: rotate(180deg);
+        }
+
+        #b4 {
+            transform: translate(0, -120px);
+        }
+
+        #c1 {
+            transform: translate(-480px, 120px);
+        }
+
+        #c2 {
+            transform: translate(160px, 0);
+        }
+
+        #c3 {
+            transform: translate(160px, 0);
+        }
+
+        #c4 {
+            transform: translate(160px);
+        }
+
+        #d3 {
+            transform: translate(-160px);
+        }
+
+        #d4 {
+            transform: translate(0px, 360px);
+
+        }
+
         /* << SOLUTION: CODE ENDS HERE */
     </style>
 </head>
+
 <body>
 
     <!-- Original -->
@@ -43,17 +93,17 @@
         <img src="./img/A2.jpg">
         <img src="./img/A3.jpg">
         <img src="./img/A4.jpg">
-        
+
         <img src="./img/B1.jpg">
         <img src="./img/B2.original.jpg">
         <img src="./img/B3.original.jpg">
         <img src="./img/B4.jpg">
-        
+
         <img src="./img/C1.jpg">
         <img src="./img/C2.jpg">
         <img src="./img/C3.jpg">
         <img src="./img/C4.jpg">
-        
+
         <img src="./img/D1.jpg">
         <img src="./img/D2.jpg">
         <img src="./img/D3.jpg">
@@ -68,12 +118,12 @@
         <img id="b2" src="./img/B2.jpg">
         <img id="a3" src="./img/A3.jpg">
         <img id="d4" src="./img/D4.jpg">
-        
+
         <img id="b1" src="./img/B1.jpg">
         <img id="a2" src="./img/A2.jpg">
         <img id="b3" src="./img/B3.jpg">
         <img id="c1" src="./img/C1.jpg">
-        
+
         <img id="c2" src="./img/C2.jpg">
         <img id="c3" src="./img/C3.jpg">
         <img id="c4" src="./img/C4.jpg">
@@ -86,4 +136,5 @@
 
     </div>
 </body>
+
 </html>
