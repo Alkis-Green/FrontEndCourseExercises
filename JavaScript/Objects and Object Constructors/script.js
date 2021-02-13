@@ -2,7 +2,7 @@
 
 
 
-function Books(title, author, pages, read) {
+function Book(title, author, pages, read) {
     this.title = title,
         this.author = author,
         this.pages = pages,
@@ -12,5 +12,8 @@ function Books(title, author, pages, read) {
         }
 };
 
-const theHobbit = new Books('The Hobbit', 'J.R.R', 295, 'not read yet');
+const theHobbit = new Book('The Hobbit', 'J.R.R', 295, 'Not read yet');
 console.log(theHobbit.info());
+
+const theAlchemist = new Book('The Alchemist', 'Paulo Coelho', 256, 'Completed');
+console.log(theAlchemist.info());
