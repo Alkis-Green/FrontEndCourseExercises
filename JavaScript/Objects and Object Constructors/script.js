@@ -22,54 +22,44 @@ console.log(theAlchemist.info());
 //////////////////  EXERCISE 2    /////////////
 
 
-function Account(name, iban, balance) {
-    this.name = name,
-        this.iban = iban,
-        this.balance = balance
+function Account(fullName, iban, balance) {
+    this.fullName = fullName;
+    this.iban = iban;
+    this.balance = balance;
+}
+
+const kostasMinaidis = new Account("Kostas Minaidis", "GR20030001234", 0);
+
+Account.prototype.getBalance = function () {
+    console.log(this.balance);
+    return this.balance;
 };
 
+Account.prototype.deposit = function (depositAmount) {
+    this.balance += depositAmount;
+    return this.balance;
+};
 
-Account.prototype.deposit = function (amount) {
-    if (this._isPositive(amount)) {
-        this.balance += amount;
-        console.info(`Deposit: ${this.name} new balance is ${this.balance}`);
-        return true;
+Account.prototype.withdraw = function (withdrawalAmount) {
+
+    if (this.balance - withdrawalAmount < 0) {
+        console.log("Insufficient balance");
+        return "Insufficient balance"
     }
-    return false;
+    if (withdrawalAmount < 0 || typeof withdrawalAmount !== "number") {
+        console.log("Invalid amount");
+        return "Invalid amount"
+    }
+    this.balance -= withdrawalAmount;
+    return this.balance;
 }
 
-Account.prototype.withdraw = function (amount) {
-    if (this._isAllowed(amount)) {
-        this.balance -= amount;
-        console.info(`Withdraw: ${this.name} new balance is ${this.balance}`);
-        return true;
-    }
-    return false;
-}
+kostasMinaidis.getBalance();
+kostasMinaidis.deposit(100);
+kostasMinaidis.getBalance();
+kostasMinaidis.withdraw(50);
+kostasMinaidis.getBalance();
 
-Account.prototype._isPositive = function (amount) {
-    const isPositive = amount > 0;
-    if (!isPositive) {
-        console.error('Amount must be positive!');
-        return false;
-    }
-    return true;
-}
-
-Account.prototype._isAllowed = function (amount) {
-    if (!this._isPositive(amount)) return false;
-
-    const isAllowed = this.balance - amount >= 0;
-    if (!isAllowed) {
-        console.error('You have insufficient funds!');
-        return false;
-    }
-    return true;
-}
-
-
-
-const alkis = new Account('Alkis Green', 20090003858, 900);
-
-alkis.deposit(400);
-alkis.withdraw(800);
+kostasMinaidis.withdraw(500);
+kostasMinaidis.withdraw("50");
+kostasMinaidis.withdraw(-150);
