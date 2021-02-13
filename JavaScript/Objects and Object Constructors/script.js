@@ -28,7 +28,7 @@ function Account(fullName, iban, balance) {
     this.balance = balance;
 }
 
-const kostasMinaidis = new Account("Kostas Minaidis", "GR20030001234", 0);
+const alkisGkreen = new Account("Alkis Gkreen", "GR20030001234", 0);
 
 Account.prototype.getBalance = function () {
     console.log(this.balance);
@@ -54,12 +54,12 @@ Account.prototype.withdraw = function (withdrawalAmount) {
     return this.balance;
 }
 
-kostasMinaidis.getBalance();
-kostasMinaidis.deposit(100);
-kostasMinaidis.getBalance();
-kostasMinaidis.withdraw(50);
-kostasMinaidis.getBalance();
+alkisGkreen.getBalance();
+alkisGkreen.deposit(100);
+alkisGkreen.getBalance();
+alkisGkreen.withdraw(50);
+alkisGkreen.getBalance();
 
-kostasMinaidis.withdraw(500);
-kostasMinaidis.withdraw("50");
-kostasMinaidis.withdraw(-150);
+alkisGkreen.withdraw(500);
+alkisGkreen.withdraw("50");
+alkisGkreen.withdraw(-150);
